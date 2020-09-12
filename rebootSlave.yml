@@ -1,0 +1,7 @@
+---
+ - hosts: slaves
+   tasks:
+   - name: Reboot Slave Machine
+     yum:
+       name: nginx
+       state: present
